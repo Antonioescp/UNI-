@@ -60,13 +60,13 @@ body{
 }
 
 #tile1{
-	background: url(../ph/tiles.png) no-repeat;
+	background: url("../ph/tiles.png") no-repeat;
 }
 #tile2{
-	background: url(../ph/tiles.png) no-repeat;
+	background: url("../ph/tiles.png") no-repeat;
 }
 #tile3{
-	background: url(../img/filosofos.jpeg) center;
+	background: url("../img/filosofos.jpeg") center;
 }
 
 /*FOOTER*/
@@ -83,7 +83,7 @@ footer{
 @media (min-width: 768px) and (max-width: 991px){
 	#tile3{
 		width:95%;
-		background: url(../ph/tiles.png) repeat;
+		background: url("../img/filosofos.jpeg") center;
 	}
 }
 
@@ -100,6 +100,6 @@ footer{
 		background: url(../ph/tiles.png) repeat;
 	}
 	#tile3{
-		background: url(../ph/tiles.png) repeat;
+		background: url("../img/filosofos.jpeg") center;
 	}
 }
