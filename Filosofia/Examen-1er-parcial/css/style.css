@@ -1,1 +1,69 @@
-ECHO est  activado.
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #A6002A;
+	color:white;
+	font-size: 16px;
+	font-family: 'Oxygen', sans-serif;
+}
+
+
+/*HEADER(top-side) AND FOOTER */
+#top, #footer{
+	background-color: rgba(0,0,0,.4);
+	height: 50px;
+}
+
+/*HEADER*/
+#header h1{
+	margin-top: 20px;
+	text-shadow: 1px 1px 1px #222;
+	text-align: center;
+	padding:20px;
+	background-color: rgba(0,0,0,.4);
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+}
+
+/*TILES*/
+.tile{
+	width:300px;
+	height:300px;
+	border:0.5px solid rgba(0,0,0,.4);
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 1px 1px 20px #222;
+	position: relative;
+}
+
+.tile-link, .tile-link:hover, .tile-link:active, .tile-link:focus{
+	color:white;
+	text-decoration: none;
+}
+
+.tile-title{
+	position:absolute;
+	bottom:0;
+	right:0;
+	background-color: rgba(0,0,0,.4);
+	width: 100%;
+	text-align: center;
+	margin-bottom: 0;
+	padding:10px; 
+}
+
+/*FOOTER*/
+footer{
+	position: relative;
+}
+
+#footer{
+	margin-top: 50px;
+}
+
