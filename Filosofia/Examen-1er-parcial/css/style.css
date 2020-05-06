@@ -17,16 +17,30 @@ body{
 }
 
 /*HEADER*/
-#header h1{
+#header-title{
+	text-align:center;
+	margin-top: 20px;
+}
+#header-bottom{
 	margin-top: 20px;
 	text-shadow: 1px 1px 1px #222;
 	text-align: center;
-	padding:20px;
+	padding-top:30px;
+	padding-bottom: 20px;
 	background-color: rgba(0,0,0,.4);
-	width: 75%;
+	width: 150px;
 	margin-left: auto;
 	margin-right: auto;
-	border-radius: 10px;
+	border-radius: 200px 200px 10px 10px;
+}
+
+#header-bottom span{
+	font-style: italic;
+	color:gray;
+}
+
+#header h2{
+
 }
 
 /*TILES*/
@@ -38,13 +52,20 @@ body{
 	margin-bottom: 50px;
 	margin-left: auto;
 	margin-right: auto;
-	box-shadow: -10px 5px 15px rgba(0,0,0,.4);
+	/*box-shadow: -10px 5px 15px rgba(0,0,0,.4);*/
+	box-shadow: -10px 5px 35px rgba(0,0,0,.4);
 	position: relative;
 }
 
 .tile-link, .tile-link:hover, .tile-link:active, .tile-link:focus{
 	color:white;
 	text-decoration: none;
+}
+
+.tile-link:hover{
+	box-shadow: 10px 10px 10px rgba(0,0,0,.4);
+	text-shadow: -2px 1px 1px rgba(0,0,0,.9);
+	font-style: italic;
 }
 
 .tile-title{
@@ -60,14 +81,30 @@ body{
 }
 
 #tile1{
-	background: url("../ph/tiles.png") no-repeat;
+	background: url("../img/res/1.png") center;
 }
+
+#tile1:hover{
+	/*box-shadow: -10px 5px 35px rgba(0,0,0,.4);*/
+	box-shadow: -10px 5px 15px rgba(0,0,0,.4);
+}
+#tile2:hover{
+	/*box-shadow: -10px 5px 35px rgba(0,0,0,.4);*/
+	box-shadow: -10px 5px 15px rgba(0,0,0,.4);
+}
+#tile3:hover{
+	/*box-shadow: -10px 5px 35px rgba(0,0,0,.4);*/
+	box-shadow: -10px 5px 15px rgba(0,0,0,.4);
+}
+
 #tile2{
-	background: url("../ph/tiles.png") no-repeat;
+	background: url("../img/res/3.jpg") center;
 }
+
 #tile3{
-	background: url("../img/filosofos.jpeg") center;
+	background: url("../img/res/2.png") center;
 }
+
 
 /*FOOTER*/
 footer{
@@ -75,7 +112,7 @@ footer{
 }
 
 #footer{
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 
@@ -84,22 +121,22 @@ footer{
 	#tile3{
 		width:95%;
 		background: url("../img/filosofos.jpeg") center;
+		margin-top: 10px;
 	}
 }
 
 /*small devices*/
 @media (max-width:576px ){
 	.tile{
-		width: 95%;
 		margin-bottom: 10px;
 	}
 	#tile1{
-		background: url(../ph/tiles.png) repeat;
+		background: url("../img/res/1.png") repeat center;
 	}
 	#tile2{
-		background: url(../ph/tiles.png) repeat;
+		background: url("../img/res/3.jpg") repeat center;
 	}
 	#tile3{
-		background: url("../img/filosofos.jpeg") center;
+		background: url("../img/res/2.png") center;
 	}
 }
