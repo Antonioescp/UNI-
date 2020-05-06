@@ -33,7 +33,7 @@ body{
 .tile{
 	width:300px;
 	height:300px;
-	border:0.5px solid rgba(0,0,0,.4);
+	border:0.5px solid rgba(0,0,0,.3);
 	margin-top: 50px;
 	margin-bottom: 50px;
 	margin-left: auto;
@@ -60,22 +60,15 @@ body{
 }
 
 #tile1{
-	background: url(../ph/tiles.png);
+	background: url(../ph/tiles.png) no-repeat;
 }
 #tile2{
-	background: url(../ph/tiles.png);
+	background: url(../ph/tiles.png) no-repeat;
 }
 #tile3{
-	background: url(../ph/tiles.png);
+	background: url(../ph/tiles.png) no-repeat;
 }
 
-#tile2{
-
-}
-
-#tile3{
-
-}
 /*FOOTER*/
 footer{
 	position: relative;
@@ -85,3 +78,28 @@ footer{
 	margin-top: 50px;
 }
 
+
+/*Medium devices*/
+@media (min-width: 768px) and (max-width: 991px){
+	#tile3{
+		width:95%;
+		background: url(../ph/tiles.png) repeat;
+	}
+}
+
+/*small devices*/
+@media (max-width:576px ){
+	.tile{
+		width: 95%;
+		margin-bottom: 10px;
+	}
+	#tile1{
+		background: url(../ph/tiles.png) repeat;
+	}
+	#tile2{
+		background: url(../ph/tiles.png) repeat;
+	}
+	#tile3{
+		background: url(../ph/tiles.png) repeat;
+	}
+}
