@@ -29,6 +29,7 @@ body{
 	padding-bottom: 20px;
 	background-color: rgba(0,0,0,.4);
 	width: 150px;
+	height:122px;
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 200px 200px 10px 10px;
@@ -39,8 +40,24 @@ body{
 	color:gray;
 }
 
-#header h2{
+.line-top{
+	width:50%;
+	background-color: rgba(0,0,0,.4);
+	height: 15px;
+	margin-top: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 100px;
+}
 
+.line-bottom{
+	width:50%;
+	background-color: rgba(0,0,0,.4);
+	height: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 35px;
+	border-radius: 100px;
 }
 
 /*TILES*/
@@ -105,6 +122,29 @@ body{
 	background: url("../img/res/2.png") center;
 }
 
+/*closing capsule*/
+#capsule-title{
+	text-align:center;
+	margin-top: 20px;
+}
+#capsule-bottom{
+	text-shadow: 1px 1px 1px #222;
+	text-align: center;
+	padding-top:30px;
+	padding-bottom: 20px;
+	background-color: rgba(0,0,0,.4);
+	width: 150px;
+	height:122px;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px 10px 200px 200px;
+}
+
+#capsule-bottom span{
+	font-style: italic;
+	color:gray;
+}
 
 /*FOOTER*/
 footer{
@@ -127,9 +167,6 @@ footer{
 
 /*small devices*/
 @media (max-width:576px ){
-	.tile{
-		margin-bottom: 10px;
-	}
 	#tile1{
 		background: url("../img/res/1.png") repeat center;
 	}
