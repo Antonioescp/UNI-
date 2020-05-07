@@ -10,8 +10,8 @@ body{
 }
 
 
-/*HEADER(top-side) AND FOOTER */
-#top, #footer{
+/*TOP AND BOTTOM WRAPPER*/
+#top, #bottom{
 	background-color: rgba(0,0,0,.4);
 	height: 50px;
 }
@@ -142,7 +142,7 @@ body{
 }
 
 #capsule-bottom span{
-	font-style: italic;
+	/*font-style: italic;*/
 	color:gray;
 }
 
@@ -151,7 +151,7 @@ footer{
 	position: relative;
 }
 
-#footer{
+#bottom{
 	margin-top: 20px;
 }
 
@@ -160,7 +160,7 @@ footer{
 @media (min-width: 768px) and (max-width: 991px){
 	#tile3{
 		width:95%;
-		background: url("../img/filosofos.jpeg") center;
+		background: url("../img/opcional/filosofos.jpeg") center;
 		margin-top: 10px;
 	}
 }
@@ -174,6 +174,6 @@ footer{
 		background: url("../img/res/3.jpg") repeat center;
 	}
 	#tile3{
-		background: url("../img/res/2.png") center;
+		background: url("../img/res/2.png") repeat center;
 	}
 }
