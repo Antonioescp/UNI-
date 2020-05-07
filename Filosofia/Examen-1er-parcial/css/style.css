@@ -65,6 +65,7 @@ body{
 	width:300px;
 	height:300px;
 	border:0.5px solid rgba(0,0,0,.3);
+	border-radius: 30px;
 	margin-top: 50px;
 	margin-bottom: 50px;
 	margin-left: auto;
@@ -72,6 +73,7 @@ body{
 	/*box-shadow: -10px 5px 15px rgba(0,0,0,.4);*/
 	box-shadow: -10px 5px 35px rgba(0,0,0,.4);
 	position: relative;
+	overflow: hidden;
 }
 
 .tile-link, .tile-link:hover, .tile-link:active, .tile-link:focus{
@@ -152,7 +154,6 @@ footer{
 }
 
 #bottom{
-	margin-top: 20px;
 }
 
 
