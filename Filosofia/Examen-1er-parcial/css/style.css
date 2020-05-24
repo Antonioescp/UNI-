@@ -107,21 +107,7 @@ body{
 	background: url("../img/res/1.png") center;
 }
 
-#tile1:hover{
-	/*box-shadow: -10px 5px 35px rgba(0,0,0,.4);*/
-	box-shadow: -10px 5px 15px rgba(0,0,0,.4);
-	cursor: pointer;
-	text-shadow: -2px 1px 1px rgba(0,0,0,.9);
-	font-style: italic;
-}
-#tile2:hover{
-	/*box-shadow: -10px 5px 35px rgba(0,0,0,.4);*/
-	box-shadow: -10px 5px 15px rgba(0,0,0,.4);
-	cursor: pointer;
-	text-shadow: -2px 1px 1px rgba(0,0,0,.9);
-	font-style: italic;
-}
-#tile3:hover{
+#tile1:hover, #tile2:hover, #tile3:hover{
 	/*box-shadow: -10px 5px 35px rgba(0,0,0,.4);*/
 	box-shadow: -10px 5px 15px rgba(0,0,0,.4);
 	cursor: pointer;
@@ -155,7 +141,7 @@ body{
 	margin-right: 15px;
 }
 
-#tile3_target > div{
+#tile3_target > div, #tile1_target > div{
 	margin:0;
 	font-size: 16px;
 	height:250px;
@@ -165,7 +151,7 @@ body{
 	margin-right: 15px;
 }
 
-#tile3_target > div h3, #common_target_lg > div h3, #tile3_target_md > div h3{
+#tile3_target > div h3, #common_target_lg > div h3, #tile3_target_md > div h3, #t1-md-target > div h3, #tile1_target > div h3{
 	font-size: 16px;
 	font-weight: bold;
 }
@@ -176,7 +162,7 @@ body{
 	border-radius: 10px;
 }
 
-#common_target_lg > dl, #common_target_lg > div, #t2-md-target > dl{
+#common_target_lg > dl, #common_target_lg > div, #t2-md-target > dl, #t1-md-target > div{
 	margin:30px;
 	margin-left: 15px;
 	margin-right: 15px;
@@ -197,7 +183,7 @@ body{
 	height:300px;
 }
 
-#t2-md-target{
+#t2-md-target, #t1-md-target{
 	background-color: rgba(0,0,0,.4);
 	border-radius: 10px;
 	margin-bottom: 30px;

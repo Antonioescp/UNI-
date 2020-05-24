@@ -33,7 +33,33 @@ document.addEventListener("DOMContentLoaded", function (event){
 
 	// til1 function 
 	function tile1Click (event){
-		console.log("not yet set");
+		$ajaxUtils.realizarPeticionGet("snippets/tile1-content.html", function(peticion){
+
+			// large
+			if($screenListener.getSize() >= 992){
+				qs("#common_target_lg").innerHTML = peticion;
+			}
+			// medium
+			else if(($screenListener.getSize() < 992) && ($screenListener.getSize() >= 768)) {
+				qs("#t1-md-target").innerHTML = peticion;
+				qs("#tile1").onclick = tile1Blur;
+			}
+			//small
+			else{
+				qs("#tile1_target").innerHTML = peticion;
+				qs("#tile1").onclick = tile1Blur;
+			}
+
+		}, false);
+	}
+
+	function tile1Blur (event){
+		// Medium
+		if(($screenListener.getSize() >= 768) && ($screenListener.getSize() < 992)){
+			qs("#t1-md-target").innerHTML = "";
+		}
+		qs("#tile1_target").innerHTML = "";
+		qs("#tile1").onclick = tile1Click;
 	}
 
 	// tile 2 function
